@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Notes | Beginner to Advanced</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family: "Segoe UI", sans-serif;
+      background:#f4f6f8;
+      color:#222;
+      line-height:1.7;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      background:#0f172a;
+      color:white;
+      padding:18px;
+      text-align:center;
+      z-index:1000;
+    }
+
+    header h1{
+      margin:0;
+      font-size:26px;
+    }
+
+    .download-btn{
+      margin-top:10px;
+      padding:10px 18px;
+      background:#22c55e;
+      color:black;
+      border:none;
+      border-radius:6px;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:20px;
+    }
+
+    .toc{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.05);
+      margin-bottom:25px;
+    }
+
+    .toc h2{
+      margin-top:0;
+    }
+
+    .toc a{
+      display:block;
+      color:#2563eb;
+      text-decoration:none;
+      margin:6px 0;
+      font-weight:500;
+    }
+
+    section{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 0 12px rgba(0,0,0,0.06);
+      margin-bottom:30px;
+    }
+
+    section h2{
+      color:#0f172a;
+      border-bottom:2px solid #e5e7eb;
+      padding-bottom:6px;
+    }
+
+    pre{
+      background:#0f172a;
+      color:#e5e7eb;
+      padding:15px;
+      border-radius:8px;
+      overflow-x:auto;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      color:#666;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Python Notes – Beginner to Advanced</h1>
+  <button class="download-btn" onclick="window.print()">⬇ Download / Save PDF</button>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>📌 Table of Contents</h2>
+    <a href="#intro">1. Introduction to Python</a>
+    <a href="#install">2. Installation</a>
+    <a href="#syntax">3. Python Syntax</a>
+    <a href="#variables">4. Variables</a>
+    <a href="#datatypes">5. Data Types</a>
+    <a href="#conditions">6. Conditional Statements</a>
+    <a href="#loops">7. Loops</a>
+    <a href="#functions">8. Functions</a>
+    <a href="#lists">9. Lists</a>
+    <a href="#tuples">10. Tuples</a>
+    <a href="#dict">11. Dictionary</a>
+    <a href="#oops">12. OOPs</a>
+  </div>
+
+  <section id="intro">
+    <h2>1. Introduction to Python</h2>
+    <p>Python is a high-level, interpreted, and easy-to-learn programming language. It is widely used in web development, data science, AI, automation, and software development.</p>
+  </section>
+
+  <section id="install">
+    <h2>2. Installation</h2>
+    <p>Download Python from official website: <b>python.org</b></p>
+    <p>Check installation:</p>
+    <pre>python --version</pre>
+  </section>
+
+  <section id="syntax">
+    <h2>3. Python Syntax</h2>
+    <pre>
+print("Hello, World!")
+    </pre>
+  </section>
+
+  <section id="variables">
+    <h2>4. Variables</h2>
+    <pre>
+x = 10
+name = "Python"
+    </pre>
+  </section>
+
+  <section id="datatypes">
+    <h2>5. Data Types</h2>
+    <pre>
+int, float, string, list, tuple, dictionary
+    </pre>
+  </section>
+
+  <section id="conditions">
+    <h2>6. Conditional Statements</h2>
+    <pre>
+if x > 0:
+    print("Positive")
+else:
+    print("Negative")
+    </pre>
+  </section>
+
+  <section id="loops">
+    <h2>7. Loops</h2>
+    <pre>
+for i in range(5):
+    print(i)
+    </pre>
+  </section>
+
+  <section id="functions">
+    <h2>8. Functions</h2>
+    <pre>
+def add(a, b):
+    return a + b
+    </pre>
+  </section>
+
+  <section id="lists">
+    <h2>9. Lists</h2>
+    <pre>
+numbers = [1, 2, 3, 4]
+    </pre>
+  </section>
+
+  <section id="tuples">
+    <h2>10. Tuples</h2>
+    <pre>
+data = (10, 20)
+    </pre>
+  </section>
+
+  <section id="dict">
+    <h2>11. Dictionary</h2>
+    <pre>
+student = {
+  "name": "Ram",
+  "age": 18
+}
+    </pre>
+  </section>
+
+  <section id="oops">
+    <h2>12. OOPs (Classes & Objects)</h2>
+    <pre>
+class Car:
+  def __init__(self, name):
+    self.name = name
+
+c = Car("BMW")
+    </pre>
+  </section>
+
+</div>
+
+<footer>
+  © Python Notes | Made with ❤️
+</footer>
+
+</body>
+</html>
+<!-- ================= PYTHON BASICS START ================= -->
+
+<section class="note-section">
+  <h2>1. What is Python?</h2>
+  <p>
+    Python is a high-level, interpreted, and general-purpose programming language.
+    It is simple to learn and powerful to use. Python is widely used in
+    web development, data science, artificial intelligence, automation, and more.
+  </p>
+</section>
+
+<section class="note-section">
+  <h2>2. Features of Python</h2>
+  <ul>
+    <li>Easy to learn and use</li>
+    <li>Interpreted language</li>
+    <li>Free and open-source</li>
+    <li>Large standard library</li>
+    <li>Platform independent</li>
+  </ul>
+</section>
+
+<section class="note-section">
+  <h2>3. Installation & First Program</h2>
+  <p>After installing Python, you can write your first program:</p>
+  <pre><code>
+print("Hello, World!")
+  </code></pre>
+  <p>
+    The <b>print()</b> function is used to display output on the screen.
+  </p>
+</section>
+
+<section class="note-section">
+  <h2>4. Comments in Python</h2>
+  <p>
+    Comments are used to explain code and make it more readable.
+    Python ignores comments while executing the program.
+  </p>
+  <pre><code>
+# This is a single-line comment
+
+"""
+This is a
+multi-line comment
+"""
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>5. Input & Output</h2>
+  <p>
+    Python uses <b>input()</b> to take input from the user
+    and <b>print()</b> to show output.
+  </p>
+  <pre><code>
+name = input("Enter your name: ")
+print("Hello", name)
+  </code></pre>
+</section>
+
+<!-- ================= PYTHON BASICS END ================= --> 
+<!-- ================= PYTHON VARIABLES & DATA TYPES START ================= -->
+
+<section class="note-section">
+  <h2>6. Variables in Python</h2>
+  <p>
+    Variables are used to store data values.
+    In Python, you don’t need to declare the type of a variable.
+  </p>
+  <pre><code>
+x = 10
+name = "Python"
+price = 99.99
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>7. Data Types in Python</h2>
+  <p>Python supports different types of data:</p>
+  <ul>
+    <li>int – Integer numbers</li>
+    <li>float – Decimal numbers</li>
+    <li>str – Text or string</li>
+    <li>bool – True or False</li>
+  </ul>
+  <pre><code>
+a = 10        # int
+b = 3.5       # float
+c = "Hello"   # string
+d = True      # boolean
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>8. Type Casting</h2>
+  <p>
+    Type casting is used to convert one data type into another.
+  </p>
+  <pre><code>
+x = int(10.5)
+y = float(5)
+z = str(100)
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>9. Operators in Python</h2>
+  <p>Operators are used to perform operations on variables.</p>
+  <ul>
+    <li>Arithmetic Operators (+, -, *, /)</li>
+    <li>Comparison Operators (==, !=, &gt;, &lt;)</li>
+    <li>Logical Operators (and, or, not)</li>
+  </ul>
+  <pre><code>
+a = 10
+b = 5
+print(a + b)
+print(a > b)
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>10. type() Function</h2>
+  <p>
+    The <b>type()</b> function is used to check the data type of a variable.
+  </p>
+  <pre><code>
+x = 10
+print(type(x))
+
+name = "Python"
+print(type(name))
+  </code></pre>
+</section>
+
+<!-- ================= PYTHON VARIABLES & DATA TYPES END ================= -->
+<!-- ================= PYTHON CONDITIONAL STATEMENTS START ================= -->
+
+<section class="note-section">
+  <h2>11. if Statement</h2>
+  <p>
+    The <b>if</b> statement is used to execute code only when a condition is true.
+  </p>
+  <pre><code>
+age = 18
+if age >= 18:
+    print("You are eligible to vote")
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>12. if-else Statement</h2>
+  <p>
+    The <b>if-else</b> statement executes one block of code if the condition is true,
+    otherwise another block is executed.
+  </p>
+  <pre><code>
+age = 16
+if age >= 18:
+    print("You can vote")
+else:
+    print("You are not eligible")
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>13. if-elif-else Statement</h2>
+  <p>
+    The <b>elif</b> statement is used to check multiple conditions.
+  </p>
+  <pre><code>
+marks = 85
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+else:
+    print("Grade C")
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>14. Nested if</h2>
+  <p>
+    A nested if means an <b>if statement inside another if statement</b>.
+  </p>
+  <pre><code>
+age = 20
+if age >= 18:
+    if age < 60:
+        print("Adult")
+    else:
+        print("Senior Citizen")
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>15. Short-hand if</h2>
+  <p>
+    Python allows writing <b>if</b> in a single line for simple conditions.
+  </p>
+  <pre><code>
+a = 10
+b = 5
+if a > b: print("a is greater")
+  </code></pre>
+</section>
+
+<!-- ================= PYTHON CONDITIONAL STATEMENTS END ================= -->
+<!-- ================= PYTHON LOOPS START ================= -->
+
+<section class="note-section">
+  <h2>16. for Loop</h2>
+  <p>
+    The <b>for loop</b> is used to iterate over a sequence like list, string or range.
+  </p>
+  <pre><code>
+for i in range(1, 6):
+    print(i)
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>17. while Loop</h2>
+  <p>
+    The <b>while loop</b> runs as long as the given condition is true.
+  </p>
+  <pre><code>
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>18. range() Function</h2>
+  <p>
+    The <b>range()</b> function generates a sequence of numbers.
+  </p>
+  <pre><code>
+for i in range(2, 10, 2):
+    print(i)
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>19. break Statement</h2>
+  <p>
+    The <b>break</b> statement stops the loop immediately.
+  </p>
+  <pre><code>
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+  </code></pre>
+</section>
+
+<section class="note-section">
+  <h2>20. continue Statement</h2>
+  <p>
+    The <b>continue</b> statement skips the current iteration and moves to the next one.
+  </p>
+  <pre><code>
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+  </code></pre>
+</section>
+
+<!-- ================= PYTHON LOOPS END ================= -->
+<!-- ================== PYTHON NOTES : FUNCTIONS ================== -->
+
+<section class="notes-section">
+  <h2>21. Functions in Python</h2>
+  <p>
+    A function is a block of reusable code that performs a specific task.
+    Functions help make programs clean, readable, and easy to maintain.
+  </p>
+  <pre>
+def greet():
+    print("Hello, World!")
+
+greet()
+  </pre>
+</section>
+
+<section class="notes-section">
+  <h2>22. Types of Functions</h2>
+  <ul>
+    <li><b>Built-in functions</b> – print(), len(), type()</li>
+    <li><b>User-defined functions</b> – created by the programmer</li>
+  </ul>
+  <pre>
+# Built-in
+print(len("Python"))
+
+# User-defined
+def add(a, b):
+    return a + b
+  </pre>
+</section>
+
+<section class="notes-section">
+  <h2>23. Function Arguments</h2>
+  <p>
+    Arguments are values passed to a function. Python supports multiple
+    types of arguments.
+  </p>
+  <ul>
+    <li>Positional arguments</li>
+    <li>Keyword arguments</li>
+    <li>Default arguments</li>
+  </ul>
+  <pre>
+def info(name, age=18):
+    print(name, age)
+
+info("Rahul")
+info("Aman", 22)
+  </pre>
+</section>
+
+<section class="notes-section">
+ <!-- ================= NOTES 25 to 40 ================= -->
+
+<div class="note">
+  <h2>25. Lambda Functions in Python</h2>
+  <p>Lambda functions are small anonymous functions written in a single line.</p>
+
+  <h3>Syntax</h3>
+  <pre><code>lambda arguments: expression</code></pre>
+
+  <h3>Example</h3>
+  <pre><code>add = lambda a, b: a + b
+print(add(2, 3))</code></pre>
+</div>
+
+<div class="note">
+  <h2>26. List Comprehension</h2>
+  <p>List comprehension provides a shorter syntax to create lists.</p>
+
+  <pre><code>numbers = [x for x in range(5)]
+print(numbers)</code></pre>
+</div>
+
+<div class="note">
+  <h2>27. Dictionary in Python</h2>
+  <p>Dictionaries store data in key-value pairs.</p>
+
+  <pre><code>student = {"name": "Rahul", "age": 16}
+print(student["name"])</code></pre>
+</div>
+
+<div class="note">
+  <h2>28. Tuple in Python</h2>
+  <p>Tuple is an ordered, immutable collection.</p>
+
+  <pre><code>t = (1, 2, 3)
+print(t)</code></pre>
+</div>
+
+<div class="note">
+  <h2>29. Set in Python</h2>
+  <p>Set is an unordered collection of unique elements.</p>
+
+  <pre><code>s = {1, 2, 3, 3}
+print(s)</code></pre>
+</div>
+
+<div class="note">
+  <h2>30. File Handling</h2>
+  <p>Used to read and write files.</p>
+
+  <pre><code>f = open("data.txt", "r")
+print(f.read())
+f.close()</code></pre>
+</div>
+
+<div class="note">
+  <h2>31. Exception Handling</h2>
+  <p>Used to handle runtime errors.</p>
+
+  <pre><code>try:
+    x = int("abc")
+except:
+    print("Error occurred")</code></pre>
+</div>
+
+<div class="note">
+  <h2>32. Modules</h2>
+  <p>Modules are files containing Python code.</p>
+
+  <pre><code>import math
+print(math.sqrt(16))</code></pre>
+</div>
+
+<div class="note">
+  <h2>33. Packages</h2>
+  <p>Package is a collection of modules.</p>
+</div>
+
+<div class="note">
+  <h2>34. OOP in Python</h2>
+  <p>Python supports Object Oriented Programming.</p>
+</div>
+
+<div class="note">
+  <h2>35. Class and Object</h2>
+  <pre><code>class Student:
+    def __init__(self, name):
+        self.name = name
+
+s1 = Student("Amit")
+print(s1.name)</code></pre>
+</div>
+
+<div class="note">
+  <h2>36. Constructor</h2>
+  <p>Constructor initializes object data.</p>
+</div>
+
+<div class="note">
+  <h2>37. Inheritance</h2>
+  <p>One class acquires properties of another class.</p>
+</div>
+
+<div class="note">
+  <h2>38. Polymorphism</h2>
+  <p>Same function name but different behavior.</p>
+</div>
+
+<div class="note">
+  <h2>39. Encapsulation</h2>
+  <p>Wrapping data and methods together.</p>
+</div>
+
+<div class="note">
+  <h2>40. Python Advantages</h2>
+  <ul>
+    <li>Easy to learn</li>
+    <li>Interpreted language</li>
+    <li>Large community support</li>
+  </ul>
+</div>
+
+<!-- ================= END ================= -->
+<div class="note">
+  <h3>Loops in Python</h3>
+  <p>
+    Python me loop ka use repeated kaam ke liye hota hai.<br>
+    for loop aur while loop hote hain.
+  </p>
+    </div>
