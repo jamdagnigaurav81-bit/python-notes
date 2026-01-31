@@ -1,99 +1,178 @@
-<h1 style="color:red">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-  body {
-    background-color: #0f172a;
-    color: #e5e7eb;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-  }
-
-  h1, h2, h3 {
-    color: #ffffff;
-  }
-
-  .note {
-    background: #020617;
-    padding: 15px;
-    margin: 12px 0;
-    border-radius: 8px;
-    border-left: 4px solid #38bdf8;
-  }
-
-  a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
-  </style>
   <meta charset="UTF-8">
-  <title>Python Notes</title>
+  <title>Python Notes in Easy Language | Beginner to Advanced</title>
+  <meta name="description" content="Python notes in very easy language for beginners. Learn Python from basics to advanced with examples.">
+  <meta name="keywords" content="python notes, python easy language, python for beginners, python tutorial">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      padding: 20px;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.7;
     }
-    h1 {
-      color: #38bdf8;
+    header {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
+    nav {
+      background: #0f172a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
     h2 {
-      color: #22c55e;
-      margin-top: 30px;
+      color: #1e40af;
     }
-    .card {
-      background: #020617;
+    pre {
+      background: #111827;
+      color: #e5e7eb;
       padding: 15px;
-      border-radius: 10px;
-      margin-top: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    }
-    ul {
-      padding-left: 20px;
+      overflow-x: auto;
+      border-radius: 6px;
     }
     footer {
       text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      opacity: 0.7;
+      padding: 20px;
+      margin-top: 30px;
+      background: #1e293b;
+      color: white;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>🐍 Python Notes</h1>
-  <p style="text-align:center;">Complete Python notes – simple & beginner friendly</p>
+<header>
+  <h1>Python Notes (Easy Language)</h1>
+  <p>Beginner to Advanced – Learn Python Step by Step</p>
+</header>
 
-  <div class="card">
-    <h2>📘 Topics Covered</h2>
-    <ul>
-      <li>Python Basics</li>
-      <li>Variables & Data Types</li>
-      <li>Conditions & Loops</li>
-      <li>Functions</li>
-      <li>Lambda Functions</li>
-      <li>Lists, Tuples, Sets, Dictionaries</li>
-      <li>OOP Concepts</li>
-    </ul>
-<div class="note">
-  <h2>Python Variables</h2>
-  <p>Variable ek container hota hai value store karne ke liye.</p>
-  </div>
-  
-  <div class="card">
-    <h2>📝 Notes</h2>
-    <p>You can add your Python notes here step by step.</p>
-  </div>
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#install">Installation</a>
+  <a href="#syntax">Syntax</a>
+  <a href="#variables">Variables</a>
+  <a href="#datatypes">Data Types</a>
+  <a href="#loops">Loops</a>
+  <a href="#functions">Functions</a>
+</nav>
 
-  <footer>
-    Made with ❤️ by Gaurav jamdagni 
-  </footer>
-<a href="python.html">👉 Open Python Notes</a>
+<section id="intro">
+  <h2>What is Python?</h2>
+  <p>
+    Python is a simple and powerful programming language.
+    It is used in web development, data science, AI, automation, and many more fields.
+    Python is famous because it is easy to read and write.
+  </p>
+</section>
+
+<section id="install">
+  <h2>How to Install Python</h2>
+  <ol>
+    <li>Go to <b>python.org</b></li>
+    <li>Download latest Python version</li>
+    <li>Install and tick <b>Add Python to PATH</b></li>
+    <li>Open Command Prompt and type <b>python</b></li>
+  </ol>
+</section>
+
+<section id="syntax">
+  <h2>Python Basic Syntax</h2>
+  <p>Python code is very simple compared to other languages.</p>
+
+  <pre>
+print("Hello, World!")
+  </pre>
+
+  <p>No semicolon, no brackets – simple and clean.</p>
+</section>
+
+<section id="variables">
+  <h2>Variables in Python</h2>
+  <p>Variables are used to store data.</p>
+
+  <pre>
+name = "Gaurav"
+age = 18
+print(name)
+print(age)
+  </pre>
+</section>
+
+<section id="datatypes">
+  <h2>Data Types</h2>
+  <ul>
+    <li>int – Numbers (10, 20)</li>
+    <li>float – Decimal numbers (10.5)</li>
+    <li>str – Text ("Python")</li>
+    <li>bool – True / False</li>
+  </ul>
+
+  <pre>
+x = 10
+y = 10.5
+z = "Python"
+  </pre>
+</section>
+
+<section id="loops">
+  <h2>Loops in Python</h2>
+  <p>Loops are used to repeat code.</p>
+
+  <h3>For Loop</h3>
+  <pre>
+for i in range(5):
+    print(i)
+  </pre>
+
+  <h3>While Loop</h3>
+  <pre>
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+  </pre>
+</section>
+
+<section id="functions">
+  <h2>Functions</h2>
+  <p>Functions are used to reuse code.</p>
+
+  <pre>
+def greet():
+    print("Hello Python")
+
+greet()
+  </pre>
+</section>
+
+<footer>
+  <p>© 2026 Python Notes | Made with ❤️ by Gaurav</p>
+</footer>
+
 </body>
 </html>
-<p>🚀 My website is live</p>
