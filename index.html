@@ -2,146 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Python Notes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Complete Python notes in easy language for beginners.">
+    <title>My Notes Website</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(180deg, #0b1220, #020617);
-            color: #e5e7eb;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .card {
+        .box {
+            text-align: center;
             background: #020617;
-            border-radius: 18px;
-            padding: 30px;
-            box-shadow: 0 0 40px rgba(0,0,0,0.6);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
         }
 
         h1 {
-            text-align: center;
-            color: #38bdf8;
-            font-size: 36px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
-        .subtitle {
-            text-align: center;
+        p {
             color: #cbd5f5;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        h2 {
-            color: #22c55e;
-            margin-top: 40px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        .section {
-            margin-top: 30px;
-            padding-left: 15px;
-            border-left: 4px solid #38bdf8;
-        }
-
-        .notes-box {
-            margin-top: 30px;
-            padding: 20px;
-            background: #020617;
-            border-radius: 14px;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
-        }
-
-        .open-notes {
+        a {
             display: inline-block;
-            margin-top: 20px;
-            color: #38bdf8;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
             text-decoration: none;
+            border-radius: 8px;
             font-weight: bold;
         }
 
-        .open-notes:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #cbd5f5;
-            font-size: 14px;
+        a:hover {
+            background: #1d4ed8;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="card">
-
-            <h1>🐍 Python Notes</h1>
-            <p class="subtitle">Complete Python notes – simple & beginner friendly</p>
-
-            <h2>📘 Topics Covered</h2>
-            <ul>
-                <li>Python Basics</li>
-                <li>Variables & Data Types</li>
-                <li>Conditions & Loops</li>
-                <li>Functions</li>
-                <li>Lambda Functions</li>
-                <li>Lists, Tuples, Sets, Dictionaries</li>
-                <li>OOP Concepts</li>
-            </ul>
-
-            <div class="section">
-                <h2>Python Variables</h2>
-                <p>
-                    Variable ek container hota hai value store karne ke liye.
-                </p>
-            </div>
-
-            <div class="notes-box" id="notes">
-                <h2>📝 Notes</h2>
-                <p>
-                    You can add your Python notes here step by step.
-                </p>
-
-                <a href="#notes" class="open-notes">👉 Open Python Notes</a>
-
-<style>
-.open-notes{
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 18px;
-  background:#00c6ff;
-  color:#000;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:600;
-  z-index:999;
-  position:relative;
-}
-</style>
-                <p>🚀 My website is live</p>
-            </div>
-
-            <footer>
-                Made with ❤️ by Gaurav jamdagni
-            </footer>
-
-        </div>
+    <div class="box">
+        <h1>Welcome to My Notes</h1>
+        <p>Easy notes in simple language</p>
+        <a href="python.html">Open Python Notes</a>
     </div>
 
 </body>
