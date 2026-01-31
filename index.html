@@ -82,12 +82,36 @@
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
     }
+   .python-logo {
+  font-size: 90px;
+  margin-bottom: 20px;
+  animation: spinPulse 3s infinite ease-in-out;
+  filter: drop-shadow(0 0 15px #00e676);
+}
+
+@keyframes spinPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+} 
   </style>
 </head>
 
 <body>
 
 <header>
+  <header>
+  <div class="python-logo">🐍</div>
+  <h1><span id="typing"></span></h1>
+  <p>Easy Language • Beginner Friendly • Free Learning</p>
+  <a href="notes.html" class="btn">📘 Open Notes</a>
+  </header>
   <h1><span id="typing"></span></h1>
   <p>Easy Language • Beginner Friendly • Free Learning</p>
 
