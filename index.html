@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Notes Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+<meta charset="UTF-8">
+<title>Python Animation</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #0d1117;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Consolas, monospace;
+    }
 
-        .box {
-            text-align: center;
-            background: #020617;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
+    .editor {
+        background: #161b22;
+        padding: 30px;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 0 0 25px rgba(0,255,150,0.2);
+    }
 
-        h1 {
-            margin-bottom: 10px;
-        }
+    .code {
+        color: #c9d1d9;
+        font-size: 20px;
+        white-space: pre;
+    }
 
-        p {
-            color: #cbd5f5;
-            margin-bottom: 25px;
-        }
+    .keyword { color: #ff7b72; }
+    .string { color: #a5d6ff; }
+    .cursor {
+        display: inline-block;
+        width: 10px;
+        background: #c9d1d9;
+        margin-left: 3px;
+        animation: blink 1s infinite;
+    }
 
-        a {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        a:hover {
-            background: #1d4ed8;
-        }
-    </style>
+    @keyframes blink {
+        0%,50%,100% { opacity: 1; }
+        25%,75% { opacity: 0; }
+    }
+</style>
 </head>
 <body>
 
-    <div class="box">
-        <h1>Welcome to My Notes</h1>
-        <p>Easy notes in simple language</p>
-        <a href="python.html">Open Python Notes</a>
-        <br><br>
+<div class="editor">
+    <div class="code" id="code"></div>
+</div>
 
+<script>
+const codeText = [
+    '<span class="keyword">print</span>(',
+    '<span class="string">"GAURAVJAMDAGNI"</span>',
+    ')'
+];
+
+let line = 0;
+let char = 0;
+let output = "";
+const speed = 80;
+
+function typeCode() {
+    if (line < codeText.length) {
+        if (char < codeText[line].length) {
+            output += codeText[line].charAt(char);
+            document.getElementById("code").innerHTML = output + '<span class="cursor"></span>';
+            char++;
+            setTimeout(typeCode, speed);
+        } else {
+            output += "\n";
+            char = 0;
+            line++;
+            setTimeout(typeCode, 300);
+        }
+    } else {
+        document.getElementById("code").innerHTML = output;
+    }
+}
+
+typeCode();
+</script>
 <a href="https://wa.me/+918950253788" target="_blank"
    style="
    position:fixed;
@@ -70,22 +98,6 @@
    z-index:999;">
    💬 WhatsApp
 </a>
-        <a href="https://www.instagram.com/gaurav_jamdagni__/" target="_blank"
-   style="
-   position:fixed;
-   bottom:80px;
-   right:20px;
-   background:#E1306C;
-   color:white;
-   padding:14px 18px;
-   border-radius:50px;
-   text-decoration:none;
-   font-weight:bold;
-   box-shadow:0 4px 10px rgba(0,0,0,0.3);
-   z-index:999;">
-   📸 Instagram
-        </a>
-    </div>
 
 </body>
 </html>
