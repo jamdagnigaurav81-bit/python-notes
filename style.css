@@ -1,0 +1,86 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00ffcc;
+}
+
+/* ===== NOTES CONTAINER ===== */
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== NOTE CARD ===== */
+.note-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== NOTE TITLE ===== */
+.note-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #00ffd5;
+}
+
+/* ===== NOTE TEXT ===== */
+.note-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* ===== OPEN NOTES BUTTON ===== */
+.note-card a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00ffcc, #00bfa5);
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.note-card a:hover {
+    background: linear-gradient(135deg, #00bfa5, #00ffcc);
+    transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2rem;
+    }
+}
