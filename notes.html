@@ -3,7 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Python Notes</title>
+<style>
+/* ====== Global Look ====== */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #0f2027, #0b1a20, #000);
+  color: #e6edf3;
+  font-family: "Fira Code", monospace;
+  line-height: 1.7;
+}
 
+/* ====== Notes Container ====== */
+.notes {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ====== Headings ====== */
+.notes h2,
+.notes h3 {
+  color: #58a6ff;
+  position: relative;
+  padding-left: 14px;
+}
+
+.notes h2::before,
+.notes h3::before {
+  content: "◆";
+  position: absolute;
+  left: 0;
+  color: #1f6feb;
+}
+
+/* ====== Paragraphs ====== */
+.notes p {
+  font-size: 16px;
+  color: #c9d1d9;
+}
+
+/* ====== Code Block ====== */
+.notes pre {
+  background: linear-gradient(145deg, #0d1117, #010409);
+  border-left: 4px solid #1f6feb;
+  padding: 16px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.notes code {
+  color: #79c0ff;
+}
+</style>
   <style>
     body {
       margin: 0;
