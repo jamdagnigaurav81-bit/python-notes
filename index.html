@@ -259,8 +259,8 @@ setTimeout(typeEffect,speed);
 window.onload=typeEffect;
 </script>
 <script>
-function welcomeNotes() {
-  alert("Welcome to our notes! Are you ready to become a Python expert? 🚀");
+function welcomeNotes(event) {
+  event.preventDefault(); // pehle direct open hone se rokega
 
   let msg = new SpeechSynthesisUtterance(
     "Welcome to our notes. Are you ready to become a Python expert?"
@@ -272,8 +272,9 @@ function welcomeNotes() {
 
   window.speechSynthesis.speak(msg);
 
-  // Notes page open karega
-  window.location.href = "notes.html";
+  setTimeout(() => {
+    window.location.href = "notes.html";
+  }, 1500);
 }
 </script>
 </body>
