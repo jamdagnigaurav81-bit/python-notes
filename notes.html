@@ -179,7 +179,372 @@ color:#00ffcc;
     }
     print(student["name"])
   </div>
-  
+<div class="note">
+  <h2>🔹 If Else Statement</h2>
+  <p>
+    If else ka use condition check karne ke liye hota hai.
+    Agar condition true ho toh if chalega, warna else.
+  </p>
+</div>
+  <div class="code">
+<pre>
+marks = 75
+
+if marks >= 60:
+    print("Pass")
+else:
+    print("Fail")
+</pre>
+  </div>
+ <div class="note">
+  <h2>🔹 If Elif Else</h2>
+  <p>
+    Jab multiple conditions check karni ho,
+    tab elif ka use hota hai.
+  </p>
+ </div>
+  <div class="code">
+<pre>
+marks = 85
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+else:
+    print("Grade C")
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 For Loop</h2>
+  <p>
+    For loop ka use repetition ke liye hota hai.
+    Jaise ek kaam baar-baar karna.
+  </p>
+</div>
+  <div class="code">
+<pre>
+for i in range(1, 6):
+    print(i)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 While Loop</h2>
+  <p>
+    Jab tak condition true rahegi,
+    while loop chalta rahega.
+  </p>
+</div>
+  <div class="code">
+<pre>
+i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Python List</h2>
+  <p>
+    List ek collection hoti hai jisme multiple values store hoti hain.
+    List change (modify) ho sakti hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+numbers = [10, 20, 30, 40]
+print(numbers)
+</pre>
+  </div>
+  <div class="note">
+  <h2>🔹 List Indexing</h2>
+  <p>
+    List ke elements ko index number se access karte hain.
+    Index 0 se start hota hai.
+  </p>
+  </div> 
+  <div class="code">
+<pre>
+fruits = ["apple", "banana", "mango"]
+
+print(fruits[0])   # apple
+print(fruits[2])   # mango
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 List Methods</h2>
+  <p>
+    List ko modify karne ke liye methods use hote hain.
+  </p>
+</div>
+  <div class="code">
+<pre>
+numbers = [1, 2, 3]
+
+numbers.append(4)     # add element
+numbers.remove(2)     # remove element
+numbers.sort()        # sort list
+
+print(numbers)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Python Tuple</h2>
+  <p>
+    Tuple bhi list jaisi hoti hai,
+    lekin tuple change nahi hoti (immutable).
+  </p>
+</div>
+  <div class="code">
+<pre>
+data = (10, 20, 30)
+print(data)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 List vs Tuple</h2>
+  <p>
+    List change ho sakti hai, tuple nahi.
+    Tuple zyada fast aur secure hoti hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+# List
+a = [1, 2, 3]
+a[0] = 10
+
+# Tuple
+b = (1, 2, 3)
+# b[0] = 10  ❌ error
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Python Function</h2>
+  <p>
+    Function ek block of code hota hai jo baar-baar use kiya ja sakta hai.
+    Isse code clean aur reusable banta hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def greet():
+    print("Hello Python")
+
+greet()
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Function with Parameters</h2>
+  <p>
+    Parameters function ko input dene ke liye hote hain.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def greet(name):
+    print("Hello", name)
+
+greet("Gaurav")
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Function with Return</h2>
+  <p>
+    Return keyword function se value wapas bhejta hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Default Parameter</h2>
+  <p>
+    Agar argument pass na kare toh default value use hoti hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def greet(name="User"):
+    print("Hello", name)
+
+greet()
+greet("Aman")
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Function Inside Function</h2>
+  <p>
+    Ek function dusre function ko call kar sakta hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def welcome():
+    print("Welcome")
+
+def start():
+    welcome()
+
+start()
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Lambda Function</h2>
+  <p>
+    Lambda ek chhota anonymous function hota hai.
+    Isme <b>def</b> use nahi hota aur code one-line me hota hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+add = lambda a, b: a + b
+print(add(5, 3))
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Lambda with Single Argument</h2>
+  <p>
+    Jab sirf ek value ho, tab lambda aur simple ho jata hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+square = lambda x: x * x
+print(square(4))
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Lambda with Condition</h2>
+  <p>
+    Lambda function me if-else bhi use kar sakte hain.
+  </p>
+</div>
+  <div class="code">
+<pre>
+check = lambda x: "Even" if x % 2 == 0 else "Odd"
+print(check(7))
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Lambda with List</h2>
+  <p>
+    Lambda ka use lists ke saath bhi hota hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+nums = [1, 2, 3, 4]
+
+result = list(map(lambda x: x * 2, nums))
+print(result)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Why Lambda Function?</h2>
+  <p>
+    Jab simple aur short logic ho,
+    tab lambda function best choice hota hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+# Normal function
+def add(a, b):
+    return a + b
+
+# Lambda
+add = lambda a, b: a + b
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Recursion</h2>
+  <p>
+    Recursion tab hoti hai jab ek function khud ko hi call karta hai.
+    Isme <b>base condition</b> hona bahut zaruri hota hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def show():
+    print("Hello")
+    show()   # infinite call ❌
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Base Condition</h2>
+  <p>
+    Base condition recursion ko stop karti hai.
+    Iske bina program crash ho jata hai.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def count(n):
+    if n == 0:
+        return
+    print(n)
+    count(n - 1)
+
+count(5)
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Factorial using Recursion</h2>
+  <p>
+    Factorial ka matlab hota hai:
+    5! = 5 × 4 × 3 × 2 × 1
+  </p>
+</div>
+  <div class="code">
+<pre>
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 Sum using Recursion</h2>
+  <p>
+    Recursion se numbers ka sum bhi nikal sakte hain.
+  </p>
+</div>
+  <div class="code">
+<pre>
+def total(n):
+    if n == 0:
+        return 0
+    return n + total(n - 1)
+
+print(total(10))
+</pre>
+  </div>
+<div class="note">
+  <h2>🔹 How Recursion Works</h2>
+  <p>
+    Function stack ke through kaam karta hai.
+    Pehle call hote hain, baad me return.
+  </p>
+</div>
+  <div class="code">
+<pre>
+fun(3)
+fun(2)
+fun(1)
+fun(0)  # stop
+</pre>
+  </div>
+
 </body>
 </html>
 
