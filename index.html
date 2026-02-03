@@ -258,6 +258,23 @@ setTimeout(typeEffect,speed);
 
 window.onload=typeEffect;
 </script>
+<script>
+function welcomeNotes() {
+  alert("Welcome to our notes! Are you ready to become a Python expert? 🚀");
 
+  let msg = new SpeechSynthesisUtterance(
+    "Welcome to our notes. Are you ready to become a Python expert?"
+  );
+
+  msg.rate = 0.9;
+  msg.pitch = 1;
+  msg.lang = "en-US";
+
+  window.speechSynthesis.speak(msg);
+
+  // Notes page open karega
+  window.location.href = "notes.html";
+}
+</script>
 </body>
 </html>
