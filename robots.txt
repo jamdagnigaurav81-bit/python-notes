@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jamdagnigaurav81-bit.github.io/python-notes/sitemap.xml
