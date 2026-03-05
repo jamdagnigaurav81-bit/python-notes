@@ -11,8 +11,5 @@ Ye repository Python ke complete notes ke liye hai.
 - Lists, Tuples, Sets, Dictionaries
 - OOP Concepts
 
-## 📂 Files
-- python_basics.txt – Python basic notes
-
 ## ✍️ Author
 Gaurav Jamdagni
